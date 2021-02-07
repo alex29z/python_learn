@@ -29,6 +29,5 @@ def dic(key, list) :
 
 with open('1234.txt', 'r') as f:
     l = f.read().split()
-print(l)
-print(key_list(l))
-print(max(dic(key_list(l), l), key = dic(key_list(l).get))
+v = (list(dic(key_list(l), l).keys())[list(dic(key_list(l), l).values()).index(max(list(dic(key_list(l), l).values())))])
+print(v, (dic(key_list(l), l).get(v)))
